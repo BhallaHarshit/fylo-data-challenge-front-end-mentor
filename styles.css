@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: hsl(243, 100%, 93%);
+  background-image: url(images/bg-mobile.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-container,
+.storage-info {
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 10px 30px;
+  background-color: hsl(228, 56%, 26%);
+}
+
+.top-container {
+  border-top-right-radius: 80px;
+}
+
+.storage-info {
+  position: relative;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: start;
+}
+
+.icon-container div {
+  position: relative;
+  margin: 10px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bar {
+  margin: 10px 0;
+  width: 100%;
+  height: 20px;
+  padding: 2px;
+  background-color:  hsl(229, 57%, 11%);
+  border-radius: 20px;
+  position: relative;
+}
+
+.progress {
+  position: absolute;
+  width: 81.5%;
+  height: 16px;
+  padding: 2px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 20px;
+}
+
+.end {
+  position: absolute;
+  height: 15.5px;
+  width: 15.5px;
+  border-radius: 50%;
+  background-color: white;
+  right: 1px;
+}
+
+p {
+  display: inline;
+}
+
+.esh {
+  position: absolute;
+  right: 40px;
+}
+
+.space-left {
+  position: relative;
+  top: 35%;
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  text-align: center;
+  color: hsl(229, 57%, 11%);
+  font-size: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 15px 0 0;
+}
+
+@media screen and (min-width: 700px) {
+  *{
+    padding: 10px;
+  }
+  body {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .top-container {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .storage-info {
+    width: 300px;
+  }
+
+  .space-left {
+    margin-top: 15px;
+    top: 60px;
+  }
+}
